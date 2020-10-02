@@ -1,36 +1,736 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="ru">
 @@include('./layout/_head.html')
 
-<body>
-
+<body cz-shortcut-listen="true">
+	<!-- <div class="wrapimg"></div>	 -->
+  <div id="panel"></div>
   @@include('./layout/_header.html')
+  @@include('../modules/breadcrumbs/_breadcrumbs.html')
+	@@include('../modules/_expert.html')
+  @@include('../modules/_trend.html')
 
-  <h2>Это форма</h2>
-
-  <a href="#formElem" data-fancybox>Открыть форму</a>
-
-
-<form id="formElem">
-  <input type="email" name="name" value="roll26@yandex.ru">
-  <input id="inpmail" type="tel" name="surname" value="">
-  <input type="submit">
-</form>
-
-
+  
+  <div id="section-number" class="section-number show-on-scroll">
+    <div class="container">
+      <div class="section-title">О нас в цифрах</div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-5">
+          <div class="card-item" style="border-color: #63E9FF">
+            <div class="text">современных центра в Москве</div>
+            <div class="label"><span>3</span></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-5">
+          <div class="card-item" style="border-color: #4AF3EB">
+            <div class="text">специалиста высочайшего уровня</div>
+            <div class="label"><span>52</span></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-5">
+          <div class="card-item" style="border-color: #3DD9E6">
+            <div class="text">лет мы помогаем пациентам</div>
+            <div class="label"><span>20</span></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-5">
+          <div class="card-item" style="border-color: #3BC7EC">
+            <div class="text">пациентов благодарны нам каждый год</div>
+            <div class="label"><span>2.5</span> тыс.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="direction" class="section-direction-front show-on-scroll">
+    <div class="row no-gutters">
+      <div class="col-12 col-lg-4">
+        <div class="item item-1">
+          <div class="item-head">
+            <div class="title-head">Медскан.Онкология</div>
+            <div class="text-head">Залог эффективного лечения онкологических заболеваний – сосредоточение в рамках одного центра самых современных методов терапии.</div>
+            <div class="d-flex d-lg-none justify-content-end mt-4">
+              <a href="javascript:;" class="name-btn" data-fancybox="" data-src="#onco-list"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="item item-2">
+          <div class="item-head">
+            <div class="title-head">Медскан.Реабилитация</div>
+            <div class="text-head">Наши специалисты помогут вам вернуться к
+              привычному образу жизни максимально быстро, эффективно и без возможных
+              рисков для организма.</div>
+            <div class="d-flex d-lg-none justify-content-end mt-4">
+              <a href="javascript:;" class="name-btn" data-fancybox="" data-src="#reab-list"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="item item-3">
+          <div class="item-head">
+            <div class="title-head">Медскан.Диагностика</div>
+            <div class="text-head">Комплексная диагностика широчайшего спектра патологий различных органов и систем на экспертном уровне.</div>
+            <div class="d-flex d-lg-none justify-content-end mt-4">
+              <a href="javascript:;" class="name-btn" data-fancybox="" data-src="#diag-list"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-12 col-lg-4">
+        <div id="onco-list" class="section-direction-front">
+          <div class="item item-1">
+            <div class="item-body">
+              <ul class="item-list">
+                <li><a href="https://medscannet.ru/onco/remote-consultation/">Заочная консультация</a></li>
+                <li><a href="https://medscannet.ru/onco/oncologist-consultation/">Консультация онколога</a></li>
+                <li><a href="https://medscannet.ru/onco/service-second-opinion/">Услуга "Второе мнение"</a></li>
+                <li><a href="https://medscannet.ru/onco/luchevaya-terapiya/">Лучевая терапия</a></li>
+                <li><a href="https://medscannet.ru/onco/radiosurgery/">Радиохирургия</a></li>
+                <li><a href="https://medscannet.ru/onco/lekarstvennaya-terapiya/">Химиотерапия</a></li>
+                <li><a href="https://medscannet.ru/onco/immunotherapy/">Иммунотерапия</a></li>
+                <li><a href="https://medscannet.ru/onco/targeted-therapy/">Таргетная терапия</a></li>
+                <li><a href="https://medscannet.ru/onco/hormone-therapy/">Гормонотерапия</a></li>
+                <li><a href="https://medscannet.ru/onco/photodynamic-therapy/">Фотодинамическая терапия</a></li>
+                <li><a href="https://medscannet.ru/onco/surgical-treatment-of-cancer/">Хирургическое лечение рака</a></li>
+                <li><a href="https://medscannet.ru/onco/clinical-observation/">Диспансерное наблюдение</a></li>
+                <li><a href="https://medscannet.ru/onco/psychological-support/">Психологическая поддержка</a></li>
+              </ul>
+            </div>
+            <img class="item-img" src="index_files/onkologiya-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div id="reab-list" class="section-direction-front">
+          <div class="item item-2">
+            <div class="item-body">
+              <ul class="item-list">
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/covid-reabilitatsiya/">COVID-реабилитация</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/kardioreabilitatsiya/">Кардиореабилитация</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/neyroreabilitatsiya/">Нейрореабилитация</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/sportivnaya-reabilitatsiya/">Спортивная реабилитация</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/detskaya-reabilitatsiya/">Детская реабилитация</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/reabilitatsiya-posle-insulta/">Реабилитация после инсульта</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/lfk/">ЛФК</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/elektroneyromiografiya/">Электронейромиография</a></li>
+                <li><a href="https://medscannet.ru/reabilitatsionnyy-tsentr/stabilometriya/">Стабилометрия</a></li>
+              </ul>
+            </div>
+            <img class="item-img" src="index_files/reabilitaciya-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div id="diag-list" class="section-direction-front">
+          <div class="item item-3">
+            <div class="item-body">
+              <ul class="item-list">
+                <li><a href="https://medscannet.ru/kt/">Компьютерная томография</a></li>
+                <li><a href="https://medscannet.ru/mrt/">Магнитно-резонансная томография</a></li>
+                <li><a href="https://medscannet.ru/mammografia/">Маммография</a></li>
+                <li><a href="https://medscannet.ru/rentgenografiia/">Рентгенография</a></li>
+                <li><a href="https://medscannet.ru/uzi/">Ультразвуковое исследование </a></li>
+                <li><a href="https://medscannet.ru/program/">Программы комплексного обследования</a></li>
+                <li><a href="https://medscannet.ru/diagnostic/electrocardiography/">Электрокардиография</a></li>
+                <li><a href="https://medscannet.ru/diagnostic/dermatoscopy/">Дерматоскопия</a></li>
+                <li><a href="https://medscannet.ru/laboratoria/">Клиническая лабораторная диагностика</a></li>
+                <li><a href="https://medscannet.ru/diagnostic/pathomorphology/">Патоморфология</a></li>
+                <li><a href="https://medscannet.ru/diagnostic/immunohistochemistry/">Иммуногистохимия </a></li>
+                <li><a href="https://medscannet.ru/diagnostic/molecular-diagnostics/">Молекулярная диагностика</a></li>
+                <li><a href="https://medscannet.ru/diagnostic/genetic-test/">Генетический тест</a></li>
+              </ul>
+            </div>
+            <img class="item-img" src="index_files/diagnostika-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="section-specialist" class="section-specialist show-on-scroll">
+    <div class="container">
+      <div class="section-title">Наши специалисты</div>
+      <div class="row">
+        <div class="col-12 col-lg-3 col-item">
+          <div class="item" id="bx_651765591_11006">
+            <div class="embed-responsive embed-responsive-1by1">
+              <img class="embed-responsive-item item-img" src="index_files/7477902882a6955e8072ff4db9f53ff9.jpg" alt="Пикалова Татьяна Евгеньевна">
+              <div class="item-label">Заместитель главного врача, врач-эндокринолог</div>
+            </div>
+            <div class="item-info d-flex justify-content-between">
+              <div class="name"><span>Пикалова</span> Татьяна Евгеньевна</div>
+              <a class="name-btn" href="https://medscannet.ru/specialists/pikalova-tatyana-evgenevna/"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+            <div class="item-experience">Стаж работы: более 11 лет</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-item">
+          <div class="item" id="bx_651765591_148">
+            <div class="embed-responsive embed-responsive-1by1">
+              <img class="embed-responsive-item item-img" src="index_files/d672edd2892243fbb2bb622bb6cadf33.jpg" alt="Усычкин Сергей Владимирович">
+              <div class="item-label">Заведующий отделением лучевой терапии, магистр наук</div>
+            </div>
+            <div class="item-info d-flex justify-content-between">
+              <div class="name"><span>Усычкин</span> Сергей Владимирович</div>
+              <a class="name-btn" href="https://medscannet.ru/specialists/usychkin-sergey-vladimirovich/"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+            <div class="item-experience">Стаж 11 лет</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-item">
+          <div class="item" id="bx_651765591_11032">
+            <div class="embed-responsive embed-responsive-1by1">
+              <img class="embed-responsive-item item-img" src="index_files/f84a53c9b4318a5123d712ce87c506d5.jpg" alt="Голуб Сергей Вениаминович">
+              <div class="item-label">Врач-радиотерапевт, к.м.н</div>
+            </div>
+            <div class="item-info d-flex justify-content-between">
+              <div class="name"><span>Голуб</span> Сергей Вениаминович</div>
+              <a class="name-btn" href="https://medscannet.ru/specialists/golub-sergey-veniaminovich/"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+            <div class="item-experience">Стаж 9 лет</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-item">
+          <div class="item" id="bx_651765591_149">
+            <div class="embed-responsive embed-responsive-1by1">
+              <img class="embed-responsive-item item-img" src="index_files/ece5a6fed86d2bbce36462d377b82fcd.jpg" alt="Петров Кирилл Сергеевич">
+              <div class="item-label">Главный рентгенолог, к.м.н.</div>
+            </div>
+            <div class="item-info d-flex justify-content-between">
+              <div class="name"><span>Петров</span> Кирилл Сергеевич</div>
+              <a class="name-btn" href="https://medscannet.ru/specialists/petrov-kirill-sergeevich/"><i class="icon"><svg>
+                    <use xlink:href="#icon-arrow-big"></use>
+                  </svg></i></a>
+            </div>
+            <div class="item-experience">Стаж 13 лет</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video" class="section-video-3 show-on-scroll">
+    <div class="container topper">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4">
+          <div class="title">О компании</div>
+          <div class="text">Медскан – сеть медицинских центров,
+            специализирующихся на экспертной лучевой и лабораторной диагностике,
+            лечении онкологических заболеваний с использованием лучевой и
+            лекарственной терапии. Онкологический центр Медскан создан при поддержке
+            The University of Pittsburg Medical Center (UPMC) и Asian American
+            Medical Group (AAMG).</div>
+          <div class="mt-5">
+            <a href="https://medscannet.ru/about/" class="btn btn-primary form-wide-btn" data-shift="Подробнее"><span class="hide">Подробнее</span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 mt-5 mb-3 mt-lg-0 mb-lg-0">
+          <div class="embed-responsive embed-responsive-16by9 video-item">
+            <iframe class="embed-responsive-item" src="index_files/G-Bp1Ir0c2o.html" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="publications" class="section-publications show-on-scroll">
+    <div class="container position-relative">
+      <div class="section-pretitle">Медскан. Сеть медицинских центров</div>
+      <div class="section-title">Новости и публикации</div>
+      <a href="https://medscannet.ru/newsall/" class="publications-news d-none d-md-block">Все новости</a>
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="embed-responsive embed-responsive-16by9" style="height: 380px;">
+            <img class="img-cover embed-responsive-item" src="index_files/5eef158cfce45aaf25bd8a754c54134b.jpg" alt="Комплексная диагностика молочных желез по специальной цене.">
+            <div class="main-news d-flex flex-column justify-content-between">
+              <div class="main-news-date d-flex align-items-center">
+                01.10.2020
+              </div>
+              <div>
+                <div class="main-news-title">Комплексная диагностика молочных желез по специальной цене.</div>
+                <hr class="main-news-hr">
+                <div class="main-news-text">Милые дамы! </div>
+                <a class="link" href="https://medscannet.ru/novosti/kompleksnaya-diagnostika-molochnykh-zhelez-po-spetsialnoy-tsene/">Подробнее<i class="svg-icon"><svg>
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-between mb-4">
+          <div class="item-news-block d-flex flex-column flex-md-row justify-content-lg-between" id="bx_1373509569_40397">
+            <div class="item-news-img embed-responsive">
+              <a href="https://medscannet.ru/novosti/kompleksnaya-diagnostika-molochnykh-zhelez-po-spetsialnoy-tsene/"><img class="img-cover embed-responsive-item" src="index_files/f525434e6cca96f5731690e5c2d18fe9.jpg" alt="Красота в движении: приглашаем на прием к травматологу-ортопеду!"></a>
+            </div>
+            <div>
+              <div class="item-news-date d-flex align-items-center">
+                30.09.2020
+              </div>
+              <a href="https://medscannet.ru/novosti/kompleksnaya-diagnostika-molochnykh-zhelez-po-spetsialnoy-tsene/">
+                <div class="item-news-title">Красота в движении: приглашаем на прием к травматологу-ортопеду!</div>
+              </a>
+              <div class="item-news-text">В клиниках Медскан пациенты с
+                деформациями костно-мышечной системы могут рассчитывать на качественное
+                лечение и своевременную реабилитацию. А все потому, что у нас работает
+                профессиональный врач травматолог-ортопед, нейрофизиолог — Кхир Бек
+                Мохамад Джамилович.</div>
+            </div>
+          </div>
+          <div class="item-news-block d-flex flex-column flex-md-row justify-content-lg-between mt-4 mt-lg-0" id="bx_1373509569_40247">
+            <div class="item-news-img embed-responsive">
+              <a href="https://medscannet.ru/novosti/kompleksnaya-diagnostika-molochnykh-zhelez-po-spetsialnoy-tsene/"><img class="img-cover embed-responsive-item" src="index_files/3ae55fc87d3e3143bc84f13d0d8cf9ae.png" alt="Немелкоклеточный рак легкого III стадии"></a>
+            </div>
+            <div>
+              <div class="item-news-date d-flex align-items-center">
+                29.09.2020
+              </div>
+              <a href="https://medscannet.ru/novosti/kompleksnaya-diagnostika-molochnykh-zhelez-po-spetsialnoy-tsene/">
+                <div class="item-news-title">Немелкоклеточный рак легкого III стадии</div>
+              </a>
+              <div class="item-news-text">Немелкоклеточный рак легкого
+                III стадии: современная химиолучевая терапия с консолидирующим лечением
+                дурвалумабом – новый стандарт, снижающий риск смерти</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="section-partnership-front" class="section-partnership-front show-on-scroll">
+    <div class="container">
+      <div class="section-title">Международное научное сотрудничество</div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.who.int/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/who.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.aamg.co/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/aa.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.upmc.com/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/upmc.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.eanm.org/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/eanm.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.iaea.org/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/iaea.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="http://iasgo.net/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/int.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <a href="https://www.icrp.org/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/icrp.png"></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <a href="https://www.unscear.org/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/unscear.png"></a>
+          <a href="http://www.irpa.net/" target="_blank" rel="nofollow"><img class="partnership-front-img" src="index_files/irpa.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="section-clients-front" class="section-clients-front show-on-scroll">
+    <div class="container">
+      <div class="section-title"><span class="underline">Истории выздоровлений</span></div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <img class="clients-front-img" src="index_files/istorii.jpg">
+        </div>
+        <div class="col-12 col-md-6 col-lg-9">
+          <div class="clients-front-name">Пациентке 75 лет</div>
+          <div class="clients-front-text">Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+            massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+            justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+            pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+            semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut
+            metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+            nisi ve</div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5"><a href="#" class="clients-front-link">Другие истории выздоровлений</a></div>
+    </div>
+  </div>
+  <div id="section-foto" class="section-foto show-on-scroll">
+    <div class="container topper">
+      <div class="section-pretitle">Будем рады вас видеть</div>
+      <div class="section-title">Фото центра</div>
+      <div class="row">
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+          <img class="clients-front-img" src="index_files/foto-1.jpg">
+        </div>
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+          <img class="clients-front-img" src="index_files/foto-2.jpg">
+        </div>
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+          <img class="clients-front-img" src="index_files/foto-3.jpg">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-lg-5"><a href="https://medscannet.ru/about/" class="foto-link">О центре</a></div>
+    </div>
+  </div>
+  <div id="section-clinic" class="section-clinic show-on-scroll">
+    <div class="container topper">
+      <div class="section-title">Клиники</div>
+      <div class="map-toggle d-flex align-items-center active" data-src="#clinicsmap"><i class="svg-icon d-flex mr-2"><svg>
+            <use xlink:href="#icon-map-pin"></use>
+          </svg></i> <span>Показать на карте</span></div>
+      <div class="map-toggle d-flex align-items-center" data-src="#clinicslist"><i class="svg-icon d-flex mr-2"><svg>
+            <use xlink:href="#icon-list"></use>
+          </svg></i> <span>Показать списком</span></div>
+      <section class="toggle-item" id="clinicslist">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4" id="bx_3485106786_118">
+            <div class="clinic-container">
+              <div class="clinic-name">Онкологический центр Медскан на улице Обручева</div>
+              <img class="img-fluid" src="index_files/49bb97b329ce83868ce35a888aa7d96a.jpg" alt="Онкологический центр Медскан на улице Обручева" width="350" height="">
+              <div class="clinic-description">
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-map-pin"></use>
+                    </svg></i>
+                  <span>Москва, улица Обручева, д.21А</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-metro"></use>
+                    </svg></i>
+                  <span>Калужская</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-callback"></use>
+                    </svg></i>
+                  <span>+7 495 668-81-81</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-clock"></use>
+                    </svg></i>
+                  <span>Круглосуточно</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" id="bx_3485106786_116">
+            <div class="clinic-container">
+              <div class="clinic-name">Медицинский центр Медскан на Ленинградском шоссе</div>
+              <img class="img-fluid" src="index_files/c296a9d158ed00e08df7470c6225fc2d.jpg" alt="Медицинский центр Медскан на Ленинградском шоссе" width="350" height="">
+              <div class="clinic-description">
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-map-pin"></use>
+                    </svg></i>
+                  <span>Москва, Ленинградское шоссе, д.47</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-metro"></use>
+                    </svg></i>
+                  <span>Водный стадион, Речной вокзал</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-callback"></use>
+                    </svg></i>
+                  <span>+7 495 668-81-81</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-clock"></use>
+                    </svg></i>
+                  <span>Круглосуточно</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" id="bx_3485106786_117">
+            <div class="clinic-container">
+              <div class="clinic-name">Медицинский центр Медскан на Ильинском шоссе</div>
+              <img class="img-fluid" src="index_files/4fa79aaaeee4bb2af29467a0963229ee.jpg" alt="Медицинский центр Медскан на Ильинском шоссе" width="350" height="">
+              <div class="clinic-description">
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-map-pin"></use>
+                    </svg></i>
+                  <span>МО, д. Глухово, Ильинское шоссе/Советская улица, д.8</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-metro"></use>
+                    </svg></i>
+                  <span>Тушинская</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-callback"></use>
+                    </svg></i>
+                  <span>+7 495 668-81-81</span>
+                </div>
+                <div class="clinic-item d-flex align-items-center">
+                  <i class="svg-icon"><svg>
+                      <use xlink:href="#icon-clock"></use>
+                    </svg></i>
+                  <span>Ежедневно с 8:00 до 21:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="toggle-item" id="clinicsmap">
+        <script type="text/javascript" async="" src="index_files/ba.js"></script>
+        <ymaps id="ymaps160162985299858151" style="display: block; width: 100%; height: 545px;">
+          <ymaps class="ymaps-2-1-77-map" style="width: 0px; height: 0px;">
+            <ymaps class="ymaps-2-1-77-map ymaps-2-1-77-i-ua_js_yes ymaps-2-1-77-map-bg ymaps-2-1-77-islets_map-lang-ru" style="width: 0px; height: 0px;">
+              <ymaps class="ymaps-2-1-77-inner-panes">
+                <ymaps class="ymaps-2-1-77-events-pane ymaps-2-1-77-user-selection-none" style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.77/build/release/images/cursor/grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.77/build/release/images/cursor/grab.cur&quot;), move;" unselectable="on"></ymaps>
+                <ymaps style="top: 0px; left: 0px; position: absolute; z-index: 501;" class="ymaps-2-1-77-ground-pane">
+                  <ymaps style="z-index: 150; position: absolute;">
+                    <ymaps style="position: absolute; left: 0px; top: 0px;">
+                      <ymaps style="opacity: 1; transform-origin: 0px 0px 0px; position: absolute; transform: translate3d(6px, -10px, 0px) scale(1); background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://vec04.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=619&amp;y=321&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); list-style-image: url(&quot;https://vec04.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=619&amp;y=321&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); width: 256px; height: 256px; transition-duration: 250ms; transition-property: opacity;" unselectable="on" class="ymaps-2-1-77-user-selection-none ymaps-2-1-77-patched-for-print"></ymaps>
+                      <ymaps style="opacity: 1; transform-origin: 0px 0px 0px; position: absolute; transform: translate3d(-250px, -266px, 0px) scale(1); background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://vec01.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=618&amp;y=320&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); list-style-image: url(&quot;https://vec01.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=618&amp;y=320&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); width: 256px; height: 256px; transition-duration: 250ms; transition-property: opacity;" unselectable="on" class="ymaps-2-1-77-user-selection-none ymaps-2-1-77-patched-for-print"></ymaps>
+                      <ymaps style="opacity: 1; transform-origin: 0px 0px 0px; position: absolute; transform: translate3d(-250px, -10px, 0px) scale(1); background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://vec02.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=618&amp;y=321&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); list-style-image: url(&quot;https://vec02.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=618&amp;y=321&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); width: 256px; height: 256px; transition-duration: 250ms; transition-property: opacity;" unselectable="on" class="ymaps-2-1-77-user-selection-none ymaps-2-1-77-patched-for-print"></ymaps>
+                      <ymaps style="opacity: 1; transform-origin: 0px 0px 0px; position: absolute; transform: translate3d(6px, -266px, 0px) scale(1); background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://vec03.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=619&amp;y=320&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); list-style-image: url(&quot;https://vec03.maps.yandex.net/tiles?l=map&amp;v=20.10.02-0-b1753976116&amp;x=619&amp;y=320&amp;z=10&amp;scale=1&amp;lang=ru_UA&quot;); width: 256px; height: 256px; transition-duration: 250ms; transition-property: opacity;" unselectable="on" class="ymaps-2-1-77-user-selection-none ymaps-2-1-77-patched-for-print"></ymaps>
+                    </ymaps>
+                  </ymaps>
+                </ymaps>
+                <ymaps style="height: 0px; inset: auto 0px 0px; position: absolute; z-index: 5002; margin-bottom: 29px;" class="ymaps-2-1-77-copyrights-pane">
+                  <ymaps>
+                    <ymaps class="ymaps-2-1-77-copyright ymaps-2-1-77-copyright_fog_yes ymaps-2-1-77-copyright_logo_no" style="">
+                      <ymaps class="ymaps-2-1-77-copyright__fog">…</ymaps>
+                      <ymaps class="ymaps-2-1-77-copyright__wrap">
+                        <ymaps class="ymaps-2-1-77-copyright__layout">
+                          <ymaps class="ymaps-2-1-77-copyright__content-cell">
+                            <ymaps class="ymaps-2-1-77-copyright__content">
+                              <ymaps class="ymaps-2-1-77-copyright__text">© Яндекс</ymaps>
+                              <ymaps class="ymaps-2-1-77-copyright__agreement">&nbsp;<a class="ymaps-2-1-77-copyright__link" target="_blank" href="https://yandex.ua/legal/maps_termsofuse/?lang=ru" rel="noopener">Условия</a></ymaps>
+                            </ymaps>
+                          </ymaps>
+                          <ymaps class="ymaps-2-1-77-copyright__logo-cell"><a class="ymaps-2-1-77-copyright__logo ymaps-2-1-77-patched-for-print" href="" target="_blank" style="list-style-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii4wMSAtMS4wMiA0NS45OSAyMC4wMiI+PHBhdGggZmlsbD0icmVkIiBkPSJNOC43NyAxSDYuNTJDNC4zIDEgMi40NCAyLjY3IDIuNDQgNS45NWMwIDEuOTcuOSAzLjQyIDIuNTIgNC4xNGwtMy4wMiA1LjQ4Yy0uMS4xOCAwIC4zMi4xNi4zMmgxLjRjLjEyIDAgLjItLjA0LjI0LS4xNGwyLjc0LTUuMzloLjk5djUuNGMwIC4wNS4wNi4xMy4xMy4xM2gxLjIzYy4xMiAwIC4xNi0uMDYuMTYtLjE2VjEuMmMwLS4xNC0uMDktLjItLjIyLS4yem0tMS4zIDguMWgtLjg0Yy0xLjMgMC0yLjU2LS45NS0yLjU2LTMuMzQgMC0yLjQ4IDEuMTgtMy41IDIuMzktMy41aDFWOS4xeiIvPjxwYXRoIGQ9Ik0xNi4xOCA1LjkzaC0xLjIyYy0uMSAwLS4xNi4wOC0uMTYuMTR2My44aC0yLjI3di0zLjhjMC0uMS0uMDQtLjE0LS4xNC0uMTRoLTEuMjJjLS4xIDAtLjE2LjA2LS4xNi4xNHY5LjY2YzAgLjEuMDQuMTYuMTQuMTZoMS4yNGMuMDggMCAuMTQtLjA2LjE0LS4xNnYtNC42aDIuMjd2NC42YzAgLjEuMDYuMTYuMTYuMTZoMS4yMmMuMSAwIC4xNC0uMDguMTQtLjE2VjYuMDdhLjEzLjEzIDAgMCAwLS4xNC0uMTR6bTI3LjkyIDkuMzNsLS4xNi0uNjgtLjEtLjA4Yy0uMSAwLS42My4yMi0xLjQuMjItMS41IDAtMi4yMi0xLjQ1LTIuMjItMy43NSAwLTIuMDMuNi00LjA0IDEuNjMtNC4wNC4yOCAwIC42Mi4wOCAxLjE1LjU4LjA2LjA2LjEuMDguMTUuMDguMDYgMCAuMTItLjA0LjE4LS4xNGwuNTMtLjg4LjA3LS4xOGMwLS4wOC0uMDgtLjE0LS4yLS4yYTMuNzkgMy43OSAwIDAgMC0xLjg0LS41Yy0xLjg1IDAtMy4zIDIuMjMtMy4zIDUuNzEgMCAzIDEuMzkgNC43MyAzLjM2IDQuNzMuODMgMCAxLjcyLS40IDIuMDctLjY1LjA4LS4wNi4xLS4xNC4wOC0uMjJ6bS04LjU3LTQuODNsMi4zNi00LjM2Yy4wNS0uMDYuMDItLjE0LS4wNS0uMTRoLTEuMTdjLS4zMyAwLS40NS4xMi0uNTcuMzhsLTEuNzcgMy43MmMtLjEuMjItLjIuMzYtLjMuNDJWNi4wN2MwLS4wOC0uMDQtLjE0LS4xMi0uMTRoLTEuMjhjLS4wNiAwLS4xMi4wNi0uMTIuMTR2OS42OGMwIC4wNi4wNC4xNC4xMi4xNGgxLjI4Yy4wOCAwIC4xMi0uMDYuMTItLjE0di00Ljk5Yy4wNi4wNC4xLjEuMTQuMThsMi4yNSA0LjY1Yy4xMS4yNC4zLjMuNTUuM2gxLjI2Yy4wOCAwIC4xLS4wOC4wNi0uMTRsLTIuNzYtNS4zM3ptLTExLjMgNC4yMWgtLjI0Yy0uMyAwLS4zNy0uMTItLjM3LS4zNnYtOC4yYzAtLjEtLjA0LS4xNS0uMTItLjE1aC0zLjk0Yy0uMSAwLS4xNi4wNi0uMTYuMTR2LjcyYzAgMi40LS4xNCA1LjUtMS40IDcuODVoLS40NGMtLjExIDAtLjE1LjA2LS4xNS4xNnYyLjljMCAuMS4wNy4xNC4xMy4xNGguOTVjLjIyIDAgLjMtLjE2LjMtLjNWMTUuOUgyM3YxLjgxYzAgLjA4LjA3LjE0LjE0LjE0aDFjLjEzIDAgLjI1LS4xLjI1LS4zVjE0LjhjMC0uMS0uMDYtLjE2LS4xNi0uMTZ6bS0yLjEzIDBoLTIuODZjMS0xLjczIDEuNC0zLjY4IDEuNTQtNi4wNi4wNC0uNTIuMDYtMS4wNS4wNi0xLjRoMS4yNnY3LjQ2em02LjE1LTguOTVjLTIuMTMgMC0zLjA4IDIuNy0zLjA4IDUuNjUgMCAzIDEuMzUgNC43OSAzLjMyIDQuNzkuOTYgMCAxLjgxLS4zOCAyLjI0LS42Ni4wOC0uMDQuMS0uMS4wOC0uMTdsLS4xNS0uNjhjLS4wMy0uMDgtLjA2LS4xMi0uMTYtLjEyLS4wOCAwLS42NS4yMi0xLjQ2LjIyLTEuNTIgMC0yLjIzLTEuMzMtMi4yMy0zLjA4di0uNDdzLjc3LjA5IDEuMjMuMDloMi44N3YtLjg0YzAtMy4wOC0xLjA4LTQuNzMtMi42Ni00Ljczem0tLjIxIDQuMzJjLS40NiAwLTEuMTcuMDgtMS4xNy4wOHMwLS4zLjA0LS42MmMuMTgtMS42OS42LTIuNTQgMS4yOC0yLjU0LjY0IDAgMS4wMy44NyAxLjEzIDIuNC4wMi4zMi4wMi42OC4wMi42OGgtMS4zeiIvPjwvc3ZnPg==&quot;);"></a></ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                  </ymaps>
+                  <ymaps class="ymaps-2-1-77-map-copyrights-promo"></ymaps>
+                </ymaps>
+                <ymaps style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;" class="ymaps-2-1-77-controls-pane">
+                  <ymaps class="ymaps-2-1-77-controls__toolbar" style="margin-top: 10px;">
+                    <ymaps class="ymaps-2-1-77-controls__toolbar_left">
+                      <ymaps style="margin-right: 0px; margin-left: 10px; position: inherit;" class="ymaps-2-1-77-controls__control_toolbar ymaps-2-1-77-user-selection-none" unselectable="on">
+                        <ymaps>
+                          <ymaps class="ymaps-2-1-77-float-button ymaps-2-1-77-_hidden-text" style="max-width: 90px" title="Определить ваше местоположение">
+                            <ymaps class="ymaps-2-1-77-float-button-icon ymaps-2-1-77-float-button-icon_icon_geolocation"></ymaps>
+                            <ymaps class="ymaps-2-1-77-float-button-text"></ymaps>
+                          </ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                    <ymaps class="ymaps-2-1-77-controls__toolbar_right">
+                      <ymaps style="margin-right: 10px; margin-left: 0px; position: inherit;" class="ymaps-2-1-77-controls__control_toolbar">
+                        <ymaps>
+                          <ymaps class="ymaps-2-1-77-traffic">
+                            <ymaps id="id_160162985372839208704" unselectable="on" class="ymaps-2-1-77-user-selection-none">
+                              <ymaps>
+                                <ymaps class="ymaps-2-1-77-float-button ymaps-2-1-77-float-button_traffic_left ymaps-2-1-77-_hidden-text">
+                                  <ymaps class="ymaps-2-1-77-traffic__icon ymaps-2-1-77-traffic__icon_icon_off ymaps-2-1-77-float-button-icon"></ymaps>
+                                  <ymaps class="ymaps-2-1-77-float-button-text">
+                                    <ymaps>Пробки</ymaps>
+                                  </ymaps>
+                                </ymaps>
+                              </ymaps>
+                              <ymaps></ymaps>
+                            </ymaps>
+                            <ymaps id="id_160162985372839208705">
+                              <ymaps>
+                                <ymaps class="ymaps-2-1-77-traffic__panel ymaps-2-1-77-popup ymaps-2-1-77-popup_direction_down ymaps-2-1-77-popup_to_bottom ymaps-2-1-77-popup_theme_ffffff ymaps-2-1-77-user-selection-none" unselectable="on" style="width: 270px;">
+                                  <ymaps class="ymaps-2-1-77-traffic__tail ymaps-2-1-77-popup__tail"></ymaps>
+                                  <ymaps class="ymaps-2-1-77-traffic__panel-content">
+                                    <ymaps id="id_160162985372839208706">
+                                      <ymaps>
+                                        <ymaps class="ymaps-2-1-77-traffic__switcher">
+                                          <ymaps class="ymaps-2-1-77-traffic__switcher-item ymaps-2-1-77-traffic__switcher-item_data_actual ymaps-2-1-77-traffic__switcher-item_selected_yes">Сейчас</ymaps>
+                                          <ymaps class="ymaps-2-1-77-traffic__switcher-item ymaps-2-1-77-traffic__switcher-item_data_archive">Статистика</ymaps>
+                                        </ymaps>
+                                      </ymaps>
+                                    </ymaps>
+                                    <ymaps></ymaps>
+                                    <ymaps></ymaps>
+                                    <ymaps></ymaps>
+                                  </ymaps>
+                                </ymaps>
+                              </ymaps>
+                            </ymaps>
+                          </ymaps>
+                        </ymaps>
+                      </ymaps>
+                      <ymaps style="margin-right: 10px; margin-left: 0px; position: inherit;" class="ymaps-2-1-77-controls__control_toolbar">
+                        <ymaps>
+                          <ymaps class="ymaps-2-1-77-listbox ymaps-2-1-77-listbox_opened_no ymaps-2-1-77-listbox_align_right" style="width: 0px;">
+                            <ymaps class="ymaps-2-1-77-listbox__button ymaps-2-1-77-_hidden-text ymaps-2-1-77-user-selection-none" unselectable="on" title="">
+                              <ymaps class="ymaps-2-1-77-listbox__button-icon ymaps-2-1-77-_icon_layers"></ymaps>
+                              <ymaps class="ymaps-2-1-77-listbox__button-text">Слои</ymaps>
+                              <ymaps class="ymaps-2-1-77-listbox__button-arrow"></ymaps>
+                            </ymaps>
+                            <ymaps class="ymaps-2-1-77-listbox__panel ymaps-2-1-77-i-custom-scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+                              <ymaps class="ymaps-2-1-77-listbox__list ymaps-2-1-77-listbox__list_scrollable_yes" style="max-height: 0px;">
+                                <ymaps>
+                                  <ymaps>
+                                    <ymaps id="id_160162985372839208694">
+                                      <ymaps unselectable="on" class="ymaps-2-1-77-user-selection-none">
+                                        <ymaps class="ymaps-2-1-77-listbox__list-item ymaps-2-1-77-listbox__list-item_selected_yes">
+                                          <ymaps class="ymaps-2-1-77-listbox__list-item-text">Схема</ymaps>
+                                        </ymaps>
+                                      </ymaps>
+                                    </ymaps>
+                                  </ymaps>
+                                </ymaps>
+                                <ymaps>
+                                  <ymaps>
+                                    <ymaps id="id_160162985372839208695">
+                                      <ymaps unselectable="on" class="ymaps-2-1-77-user-selection-none">
+                                        <ymaps class="ymaps-2-1-77-listbox__list-item ymaps-2-1-77-listbox__list-item_selected_no">
+                                          <ymaps class="ymaps-2-1-77-listbox__list-item-text">Спутник</ymaps>
+                                        </ymaps>
+                                      </ymaps>
+                                    </ymaps>
+                                  </ymaps>
+                                </ymaps>
+                                <ymaps>
+                                  <ymaps>
+                                    <ymaps id="id_160162985372839208696">
+                                      <ymaps unselectable="on" class="ymaps-2-1-77-user-selection-none">
+                                        <ymaps class="ymaps-2-1-77-listbox__list-item ymaps-2-1-77-listbox__list-item_selected_no">
+                                          <ymaps class="ymaps-2-1-77-listbox__list-item-text">Гибрид</ymaps>
+                                        </ymaps>
+                                      </ymaps>
+                                    </ymaps>
+                                  </ymaps>
+                                </ymaps>
+                              </ymaps>
+                            </ymaps>
+                          </ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                  </ymaps>
+                  <ymaps class="ymaps-2-1-77-controls__bottom" style="top: 0px;">
+                    <ymaps style="margin-right: 0px; margin-left: 0px; position: inherit; inset: auto 10px 30px auto;" class="ymaps-2-1-77-controls__control">
+                      <ymaps>
+                        <ymaps style="display: block;">
+                          <ymaps style="display: inline-block; height: 100%; vertical-align: top;">
+                            <ymaps id="id_160162985372839208697">
+                              <ymaps>
+                                <ymaps class="ymaps-2-1-77-scaleline" style="width: 70px;">
+                                  <ymaps class="ymaps-2-1-77-scaleline__left">
+                                    <ymaps class="ymaps-2-1-77-scaleline__left-border"></ymaps>
+                                    <ymaps class="ymaps-2-1-77-scaleline__left-line"></ymaps>
+                                  </ymaps>
+                                  <ymaps class="ymaps-2-1-77-scaleline__center">
+                                    <ymaps class="ymaps-2-1-77-scaleline__label">6&nbsp;км</ymaps>
+                                  </ymaps>
+                                  <ymaps class="ymaps-2-1-77-scaleline__right">
+                                    <ymaps class="ymaps-2-1-77-scaleline__right-border"></ymaps>
+                                    <ymaps class="ymaps-2-1-77-scaleline__right-line"></ymaps>
+                                  </ymaps>
+                                </ymaps>
+                              </ymaps>
+                            </ymaps>
+                          </ymaps>
+                          <ymaps style="display: inline-block; width: 10px; height: 0"></ymaps>
+                          <ymaps style="display: inline-block;">
+                            <ymaps id="id_160162985372839208698" unselectable="on" class="ymaps-2-1-77-user-selection-none">
+                              <ymaps>
+                                <ymaps class="ymaps-2-1-77-float-button ymaps-2-1-77-_hidden-text" style="max-width: 28px" title="Измерение расстояний на карте">
+                                  <ymaps class="ymaps-2-1-77-float-button-icon ymaps-2-1-77-float-button-icon_icon_ruler"></ymaps>
+                                  <ymaps class="ymaps-2-1-77-float-button-text"></ymaps>
+                                </ymaps>
+                              </ymaps>
+                            </ymaps>
+                          </ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                    <ymaps style="margin-right: 0px; margin-left: 0px; inset: auto 10px 5px; position: inherit;" class="ymaps-2-1-77-controls__control ymaps-2-1-77-user-selection-none" unselectable="on">
+                      <ymaps>
+                        <ymaps class="ymaps-2-1-77-float-button ymaps-2-1-77-_hidden-icon" style="max-width: 99999px; width: 100%;" title="">
+                          <ymaps class="ymaps-2-1-77-float-button-icon" style="padding: 0px;"></ymaps>
+                          <ymaps class="ymaps-2-1-77-float-button-text">
+                            <ymaps class="cnst_1601629854054-button">
+                              <ymaps class="cnst_1601629854054 cnst_1601629854054-button-inner" style="padding-left: 0px;">На большую карту</ymaps>
+                            </ymaps>
+                          </ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                  </ymaps>
+                  <ymaps style="margin-right: 0px; margin-left: 0px; position: inherit; inset: 108px auto auto 10px;" class="ymaps-2-1-77-controls__control">
+                    <ymaps>
+                      <ymaps class="ymaps-2-1-77-zoom" style="height: 5px">
+                        <ymaps class="ymaps-2-1-77-zoom__plus ymaps-2-1-77-zoom__button ymaps-2-1-77-float-button ymaps-2-1-77-user-selection-none" unselectable="on">
+                          <ymaps class="ymaps-2-1-77-zoom__icon ymaps-2-1-77-float-button-icon"></ymaps>
+                        </ymaps>
+                        <ymaps class="ymaps-2-1-77-zoom__minus ymaps-2-1-77-zoom__button ymaps-2-1-77-float-button ymaps-2-1-77-user-selection-none" unselectable="on">
+                          <ymaps class="ymaps-2-1-77-zoom__icon ymaps-2-1-77-float-button-icon"></ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                  </ymaps>
+                </ymaps>
+                <ymaps style="top: 0px; left: 0px; position: absolute; z-index: 2004;" class="ymaps-2-1-77-places-pane">
+                  <ymaps class="ymaps-2-1-77-placemark-overlay ymaps-2-1-77-user-selection-none" style="z-index: 800000001; height: 0px; width: 0px; position: absolute; left: -97px; top: -124px;" unselectable="on">
+                    <ymaps>
+                      <ymaps class="ymaps-2-1-77-islets_dot-icon-with-caption">
+                        <ymaps class="ymaps-2-1-77-islets_dot-icon-with-caption__caption-block">
+                          <ymaps class="ymaps-2-1-77-islets_icon-caption" style="max-width: 188px;">Медицинский центр</ymaps>
+                        </ymaps>
+                        <ymaps id="id_160162985372839208709">
+                          <ymaps class="ymaps-2-1-77-svg-icon ymaps_https___api_maps_yandex_ru_2_1_77_411313350375islands_dotIcon___ED4543__ED4543_34x41_1601629854133 ymaps-2-1-77-patched-for-print" style="position: absolute; width: 34px; height: 41px; left: -11px; top: -38px;"></ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                  </ymaps>
+                  <ymaps class="ymaps-2-1-77-placemark-overlay ymaps-2-1-77-user-selection-none" style="z-index: 800000000; height: 0px; width: 0px; position: absolute; left: -62px; top: 118px;" unselectable="on">
+                    <ymaps>
+                      <ymaps class="ymaps-2-1-77-islets_dot-icon-with-caption">
+                        <ymaps class="ymaps-2-1-77-islets_dot-icon-with-caption__caption-block">
+                          <ymaps class="ymaps-2-1-77-islets_icon-caption" style="max-width: 188px;">Онкологический центр</ymaps>
+                        </ymaps>
+                        <ymaps id="id_160162985372839208716">
+                          <ymaps class="ymaps-2-1-77-svg-icon ymaps_https___api_maps_yandex_ru_2_1_77_411313350375islands_dotIcon___ED4543__ED4543_34x41_1601629854133 ymaps-2-1-77-patched-for-print" style="position: absolute; width: 34px; height: 41px; left: -11px; top: -38px;"></ymaps>
+                        </ymaps>
+                      </ymaps>
+                    </ymaps>
+                  </ymaps>
+                </ymaps>
+              </ymaps>
+            </ymaps>
+          </ymaps>
+        </ymaps>
+      </section>
+    </div>
+  </div>
   @@include('./layout/_footer.html')
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-
-
-  <script src="js/libs.min.js"></script> 
-  <!-- <script src="js/inputmask.js"></script> -->
-  <script src="js/main.min.js"></script> 
-
-
-
+  
+  <script src="js/main.min.js"></script>
   
 </body>
 

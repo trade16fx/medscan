@@ -1,0 +1,255 @@
+.section-expert {
+	padding-top: 28px;
+	&__cont {
+		@media (min-width: 768px){
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__aside {
+		@media (min-width: 768px){
+			flex: 0	0 290px;
+			margin-right: 24px;
+		}
+		@media (min-width: 1200px){
+			flex: 0	0 350px;
+			margin-right: 24px;
+		}
+	}
+	&__title {
+		font-size: 24px;
+		margin-bottom: 28px;
+		font-weight: bold;
+		@media (min-width: 992px) { 
+			font-size: 30px;
+			margin-bottom: 56px;
+  	}
+	}
+	&__wrap {
+		@media (min-width: 768px) and (max-width: 991px) {
+		}
+	}
+	&__btn {
+		width: 290px;
+		margin-left: auto;
+		display: block;
+	
+		@media (min-width: 1200px){
+			width: 255px
+
+		}
+		&_ds {
+			display: none;
+			@media (min-width: 768px){
+				display: block;
+				margin-left: auto;
+				margin-right: 0;
+			}
+		}
+		&_mb {
+			@media (min-width: 768px){
+			display: none;
+		}
+		}
+	}
+	&__body {
+		@media (min-width: 768px){
+			flex: auto;
+		}
+		// @media (min-width: 992px){
+		// 	flex: 0 0 70%;
+		// }
+		@media (min-width: 992px){
+			
+			flex: 0 0 65%;
+		}
+		@media (min-width: 1200px){
+			
+			flex: 0 0 60%;
+		}
+	}
+}
+.expert-card {
+	position: relative;
+	border: 6px solid rgba(99, 233, 255, 0.2);
+	padding: 45px 25px 25px 35px;
+	margin-bottom: 34px;
+	@media (min-width: 992px) { 
+		border: 10px solid rgba(99, 233, 255, 0.2);
+		padding: 41px 25px 25px 39px;
+		
+  }
+  @media (min-width: 1200px) { 
+		
+		padding: 41px 85px 25px 39px;
+		
+  }
+	&__top {
+		display: flex;
+		align-items: flex-end;
+		color: #0071BB;
+		font-weight: bold;
+		line-height: .8;
+		position: absolute;
+		top: 0;
+		left: 18px;
+		transform: translateY(-50%);
+		padding: 0 13px;
+		background-color: #fff;
+		@media (min-width: 992px) { 
+			padding: 0 18px;
+	  }
+	}
+
+	
+	&:nth-child(2) &__top{
+		color: #1B9CFC;		
+	}
+	&__num {
+		font-size: 80px;
+		
+	}
+	&__attr {
+		font-size: 24px;
+		margin-bottom: 5px;
+		@media (min-width: 992px) { 
+			margin-bottom: 9px;
+		
+	  }
+	}
+	&__text {
+		font-size: 18px;
+		@media (min-width: 992px) { 
+		
+	  }
+	}
+}
+
+.expert-panel {
+	margin-bottom: 30px;
+	position: relative;
+	
+
+	@media (min-width: 1200px){
+		margin-top: -34px;
+	}
+
+	&:before{
+			
+			@media (min-width: 992px){
+				display: block;
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 10%;
+			width: 72%;
+			height: 90%;	
+			border-top: 10px solid #DDEDFF;
+			border-right: 10px solid #DDEDFF;
+			border-left: 10px solid #DDEDFF;	
+			z-index: 2;
+			}
+			
+		}
+	&__mediabox {
+		margin-bottom: 29px;
+		position: relative;
+		@media (min-width: 992px){
+			
+			width: 66%;
+			margin-left: auto;
+			margin-bottom: 0;
+			// height: 451px;
+		}
+		@media (min-width: 1200px){
+			// width: 66%;
+		}
+		img{
+			// position: absolute;
+			display: block;
+			// transform: translateY(-15px);
+			// right: 0;
+			// bottom: 0;
+			width: 100%;
+			position: relative;
+			z-index: 3;
+			@media (min-width: 992px){
+				// width: 70%;
+				// margin-left: auto;
+			}
+		}
+		&:before{
+			display: block;
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 5%;
+			width: 100%;
+			height: 95%;	
+			border-top: 6px solid #DDEDFF;
+			border-right: 6px solid #DDEDFF;
+			border-left: 6px solid #DDEDFF;	
+			z-index: 2;
+			@media (min-width: 992px){
+				display: none;
+			}
+			
+		}
+		
+		&:after{
+			display: block;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 10%;
+			width: 100%;
+			height: 90%;		
+			background: #F0F9FF;
+			border-radius: 50px 0px 0px 0px;
+			@media (min-width: 992px){
+				display: none;
+			}
+			
+		}
+		
+
+	}
+	&__body {
+		font-size: 15px;
+		@media (min-width: 992px) { 
+			background: #F0F9FF;
+			border-radius: 50px 0px 0px 0px;
+			padding: 24px 32px;
+			position: absolute;
+			right: 0;
+			top: 15%;
+			z-index: 2;
+			padding-right: 45%;
+
+  	}
+	}
+	&__text {
+		margin-bottom: 18px;
+		@media (min-width: 1200px) { 
+			margin-bottom: 24px;
+			font-size: 18px;
+	  }
+
+	}
+	&__prof {
+		color: #1B9CFC;
+		margin-bottom: 6px;
+	}
+	&__name {
+		font-size: 18px;
+		line-height: 1.1;
+		span{
+			font-weight: bold;
+			font-size: 24px;
+			display: block;
+		}
+	}
+}
+	@media (min-width: 992px) { 
+		
+  }

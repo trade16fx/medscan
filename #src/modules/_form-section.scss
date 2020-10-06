@@ -1,0 +1,140 @@
+.section-form {
+	border-bottom: 1px solid #DDEDFF;
+	@media (min-width: 768px) {
+		border: none;
+		background-color: #E9F7FF;
+	}
+	@media (min-width: 1200px) {
+		position: relative;
+		background-color: #fff;
+	}
+
+	&:before{
+		@media (min-width: 1200px) {
+			display: block;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;		
+			background-color: #E9F7FF;
+			border-radius: 0px 80px 0px 0px;
+		}
+	}
+	
+
+
+	&__body{
+		
+		background-color: #E9F7FF;
+		padding: 20px 15px 35px;
+		
+
+			@media (min-width: 768px) { 					
+				padding:30px 15px 45px;
+						
+		  }
+		  @media (min-width: 992px) { 
+				padding: 60px 15px;
+			}
+
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		margin-bottom: 10px;
+		@media (min-width: 768px) { 
+			font-size: 26px;
+		}
+		@media (min-width: 992px) { 
+			font-size: 30px;
+		}
+	}
+	&_no &__title {
+
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 1.5;
+		@media (min-width: 768px) { 
+			font-size: 18px;
+		}
+		@media (min-width: 992px) { 
+			font-size: 24px;
+		}
+	}
+	&_no &__text {
+
+	}
+	&__form-cont {
+		background-color: #fff;
+		padding-top: 23px;
+		padding-bottom: 28px;
+		width: 100%;
+
+		@media (min-width: 768px)  {					
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		@media (min-width: 1200px)  {
+			padding-right: 57px;
+			padding-left: 57px;
+			padding-top: 45px;
+			padding-bottom: 70px;
+		}
+	}
+	&__form-wrap{
+		display: flex;
+		@media (min-width: 1200px)  {
+			padding-right: 60px;
+		}
+	}
+}
+
+.contact-form {
+	&__inp {
+		color: #C4C4C4;
+		font-size: 15px;
+		padding-bottom:6px;
+		border: none;
+		border-bottom: 1px solid #DDEDFF;
+		width: 100%;
+
+
+			&::-webkit-input-placeholder {color:#C4C4C4;}
+			&::-moz-placeholder          {color:#C4C4C4;}
+			&:-moz-placeholder           {color:#C4C4C4;}
+			&:-ms-input-placeholder      {color:#C4C4C4;}
+		
+			&:focus::-webkit-input-placeholder {color: transparent}
+			&:focus::-moz-placeholder          {color: transparent}
+			&:focus:-moz-placeholder           {color: transparent}
+			&:focus:-ms-input-placeholder      {color: transparent}
+		
+
+		@media (min-width: 992px)  {
+
+		}
+
+		&_name {}
+		&_tel {}
+	}
+	&__submit {
+		width: 100%;
+		max-width: 290px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.form-grid {
+	&__col {
+		margin-bottom: 29px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+

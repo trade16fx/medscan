@@ -1,0 +1,38 @@
+.section-diseases {
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		margin-bottom: 36px;
+		@media (min-width: 768px) { 
+			font-size: 28px;
+  	}
+  	@media (min-width: 992px) { 
+  		margin-top: 120px;
+  		margin-bottom: 96px;
+			font-size: 30px;
+  	}
+	}
+	&__form-cont {}
+	&__form-title {
+		font-size: 16px;
+		margin-bottom: 20px;
+		@media (min-width: 992px) { 
+			font-size: 18px;
+			margin-bottom: 25px;
+  	}
+	}
+}
+
+.contact-form {
+	&__inp {
+		&_name {}
+		&_tel {}
+	}
+	&__submit {}
+}
+.form-grid {
+	&__col {}
+}
+	@media (min-width: 768px) { 
+		
+  }

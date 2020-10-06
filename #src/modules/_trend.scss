@@ -17,41 +17,12 @@
 	}
 	&__btn-cont{
 		margin-top: 22px;
-
-	}
-	&__collapse-btn{
-		display: inline-block;
-		position: relative;
-		
-		font-weight: bold;
-		font-size: 18px;
-		color: #0071BB;
-		padding-right: 20px;
-
-		&:before{
-			display: block;
-			position: absolute;
-			content: '';
-			right: 0;
-			top: 50%;
-			width: 7px;
-			height: 4px;		
-			background: #fff url(../images/c-arrow.svg) center no-repeat;
-			transform: translateY(-50%);
-		}
-
-		&.active{
-			&:before{
-				transform: translateY(-50%) rotate(180deg);
-			}
-		}
-		
-
 		@media (min-width: 768px) {
 			display: none;
 		}
 
 	}
+	
 	&__text {
 		font-size: 15px;
 		margin-bottom: 24px;
@@ -64,7 +35,7 @@
 			@media (min-width: 992px) { 
 				margin-bottom: 36px;
 				padding-bottom: 30px;
-		font-size: 24px;
+				font-size: 24px;
 		  }
 	}
 }

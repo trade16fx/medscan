@@ -1,0 +1,25 @@
+.section-foto{
+	.slider-panel{
+		margin-bottom: 1rem;
+	}
+}
+
+.photo-grid{
+	// margin-bottom: 2rem;
+
+		@media (min-width: 768px) { 
+			margin-bottom: 2rem;
+						
+	  }
+	  @media (min-width: 992px) { 
+			margin-bottom: 0;
+						
+	  }
+
+	  &__item{
+	  	@media (min-width: 768px) { 
+	  	flex: 0 0 33.33%;
+	  }
+	  	// padding: 0 15px;
+	  }
+}

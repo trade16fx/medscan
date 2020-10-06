@@ -1,6 +1,6 @@
 
 ; /* Start:"a:4:{s:4:"full";s:92:"/local/templates/medscan_new/components/bitrix/news.list/slider_main/script.js?1601119736152";s:6:"source";s:78:"/local/templates/medscan_new/components/bitrix/news.list/slider_main/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container1', {
 	loop: false,
 	autoHeight: true,
 	pagination: {

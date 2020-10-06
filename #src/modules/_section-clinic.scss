@@ -1,0 +1,29 @@
+#map{
+	width: 100%;
+	height: 528px;
+}
+#clinicsmap{
+	@media (min-width: 768px) { 
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+		  }
+}
+.section-clinic{
+	position: relative;
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
+	&__header{
+			@media (min-width: 768px) { 
+				display: none;
+		  }
+	}
+}
+.clinic-container{
+	height: 528px;
+	box-shadow: none;
+}

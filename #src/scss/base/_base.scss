@@ -10,9 +10,9 @@
   pointer-events: none;
   height: 10000px;
 
-  opacity: .2;
-  background-image: url(../images/bg01.png);
-  background-position: center 695px;
+  opacity: .8;
+  background-image: url(../images/bg04.png);
+  background-position: center 0px;
 
   filter: invert(100%);
   -webkit-filter: invert(100%);
@@ -179,6 +179,7 @@
 .section {
   &__header {
     margin-bottom: 2rem;
+    position: relative;
   }
 
   &__sub-title {
@@ -216,4 +217,10 @@
     background: url(../images/readmore-arrow.svg) right center no-repeat;
 
   }
+}
+.pb0{
+  padding-bottom: 0;
+}
+.mb10{
+  margin-bottom: 10px;
 }

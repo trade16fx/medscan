@@ -1,6 +1,7 @@
 .section-trend {
-	padding-top: 28px;
-	padding-bottom: 28px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	border-bottom: 1px solid #DDEDFF;
 	@media (min-width: 768px) { 
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -8,7 +9,17 @@
 	@media (min-width: 992px) { 
 		padding-top: 63px;
 		padding-bottom: 63px;
+		border: none;
 	}
+
+	&_immunity{
+		@media (min-width: 992px) { 
+		
+		padding-bottom: 0;
+	}
+	}
+
+
 	&__collapse{
 		display: none;
 		@media (min-width: 768px) { 
@@ -39,9 +50,7 @@
 		  }
 	}
 }
-.mb10{
-	margin-bottom: 10px;
-}
+
 .point-card {
 	background: #FFFFFF;
 	box-shadow: 0px 8px 15px #D6E6EF;
@@ -51,7 +60,61 @@
 
 	@media (min-width: 992px) { 
 		font-size: 24px;
-		padding: 15px 37px;
+		padding: 15px 15px 15px 35px;
+	}
+
+	&_price{
+		display: flex;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		padding: 22px;
+
+		&:after{
+			display: block;
+			position: absolute;
+			content: '';
+			right: -70px;
+			bottom: -70px;
+			width: 140px;
+			height: 140px;		
+			border-radius: 50%;
+			background-color: #E9F7FF;
+			
+			
+		}
+		
+	}
+	&_price &__body{
+		padding-right: 8px;
+		font-size: 16px;
+		flex: auto;
+		@media (min-width: 992px) {
+			padding-right: 18px;
+			font-size: 24px;
+		}
+	}
+	&_price &__price{
+		font-size: 18px;
+		color: #0071BB;
+		font-weight: bold;
+		flex: 0 0 90px;
+		text-align: right;
+		position: relative;
+		z-index: 2;
+		@media (min-width: 992px) {
+			color: #485460;
+			font-size: 24px;
+			flex: 0 0 110px;
+		}
+	}
+	&_price &__sub-text{
+		font-size: 10px;
+		color: #C4C4C4;
+		@media (min-width: 992px) {
+			font-size: 15px;
+			display: block;
+		}
 	}
 
 	&:before{

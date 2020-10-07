@@ -1,6 +1,6 @@
 .section-specialist {
-		// padding-top: 27px;
-	// padding-bottom: 27px;
+		padding-top: 27px;
+	padding-bottom: 27px;
 	border-bottom: 1px solid #DDEDFF;
 
 
@@ -42,15 +42,16 @@
 	}
 }
 .special-grid {
-	// @media (min-width: 768px) {		
-	// 	margin-bottom: -20px;
- //  }
- //  @media (min-width: 992px) { 		
-	// 	margin-bottom: -40px;
- //  }
- //  @media (min-width: 1200px) {		
-	// 	margin-bottom: -56px;
- //  }
+	
+	@media (min-width: 768px) {		
+		margin-bottom: -20px;
+  }
+  @media (min-width: 992px) { 		
+		margin-bottom: -40px;
+  }
+  @media (min-width: 1200px) {		
+		margin-bottom: -56px;
+  }
 
 	&__item {
 		@media (min-width: 768px) { 

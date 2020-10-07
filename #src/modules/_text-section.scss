@@ -6,11 +6,11 @@
 
 	@media (min-width: 768px) { 
 		padding-top: 40px;
-		padding-bottom: 0;
-		// padding-bottom: 40px;
+		padding-bottom: 40px;
 	}
 	@media (min-width: 992px) { 
 		padding-top: 60px;
+		padding-bottom: 0;
 		// padding-bottom: 60px;
 		border: none;
 	}
@@ -37,6 +37,16 @@
 		  }
 		
 
+	}
+	h4{
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-weight: bold;
+		font-size: 16px;
+		color: #0071BB;
+		@media (min-width: 992px) { 
+				font-size: 18px;
+		  }
 	}
 	&__collapse {
 		display: none;

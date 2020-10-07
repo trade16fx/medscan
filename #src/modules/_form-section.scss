@@ -4,13 +4,13 @@
 		border: none;
 		background-color: #E9F7FF;
 	}
-	@media (min-width: 1200px) {
+	@media (min-width: 992px) {
 		position: relative;
 		background-color: #fff;
 	}
 
 	&:before{
-		@media (min-width: 1200px) {
+		@media (min-width: 992px) {
 			display: block;
 			position: absolute;
 			content: '';
@@ -57,12 +57,17 @@
 	&__text {
 		font-size: 16px;
 		line-height: 1.5;
-		@media (min-width: 768px) { 
+
+		&_large{
+			@media (min-width: 768px) { 
 			font-size: 18px;
 		}
 		@media (min-width: 992px) { 
 			font-size: 24px;
 		}
+		}
+
+		
 	}
 	&_no &__text {
 
@@ -76,11 +81,12 @@
 		@media (min-width: 768px)  {					
 			padding-right: 15px;
 			padding-left: 15px;
+			padding-top: 55px;
 		}
 		@media (min-width: 1200px)  {
 			padding-right: 57px;
 			padding-left: 57px;
-			padding-top: 45px;
+			
 			padding-bottom: 70px;
 		}
 	}

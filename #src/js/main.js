@@ -18,6 +18,10 @@ jQuery(document).ready(function($) {
 		$(this).toggleClass('active');
 		$('.ancorMenu').parent().slideToggle();
 	});
+	$('.js-viewall').click(function(event) {
+		$(this).toggleClass('active');
+		$(this).parent().prev().slideToggle();
+	});
 
 	var $page = $('html, body');
 	$('.ancorMenu a').click(function() {
@@ -72,145 +76,7 @@ jQuery(document).ready(function($) {
 	if ($('.steps-slider').length){
     var stpSwiper = undefined;
     allInitSwiper('.steps-slider', stpSwiper ,767); 
-  }
-
-
-  // function advInitSwiper(objSlider, intWidth) {
-
-  //   var screenWidth = $(window).outerWidth();
-  //   var objNext = objSlider + ' .slider-arrow_next';
-  //   var objPrev = objSlider + ' .slider-arrow_prev';
-
-  //   if ( (screenWidth <= (intWidth)) && (advSwiper == undefined)) {
-  //     advSwiper = new Swiper(objSlider, {
-  //       slidesPerView: 1,
-  //       // loop: true,    
-  //       // centeredSlides: true,
-  //       autoHeight: true,
-  //       spaceBetween: 15,
-  //       pagination: {
-  //         el: '.advantages-slider__pagination',
-  //         clickable: true,
-  //         // dynamicBullets: true,
-  //         renderBullet: function (index, className) {
-  //         	return '<span class="' + className + '"><span>' + (index + 1) + '</span></span>';
-  //       	},
-  //       },
-  //       navigation: {
-	 //       nextEl: '.advantages-slider__arrow_next',
-	 //       prevEl: '.advantages-slider__arrow_prev',
-	 //     },
-  //     });
-  //   } else if ((screenWidth > intWidth) && (advSwiper != undefined)) {
-  //     advSwiper.destroy();
-  //     advSwiper = undefined;
-  //     $(objSlider + ' .swiper-wrapper').removeAttr('style');
-  //     $(objSlider + ' .swiper-slide').removeAttr('style');
-  //   }
-  // }
-
-  // function sptInitSwiper(objSlider, intWidth) {
-
-  //   var screenWidth = $(window).outerWidth();
-  //   var objNext = objSlider + ' .slider-arrow_next';
-  //   var objPrev = objSlider + ' .slider-arrow_prev';
-
-  //   if ( (screenWidth <= (intWidth)) && (sptSwiper == undefined)) {
-  //     sptSwiper = new Swiper(objSlider, {
-  //       slidesPerView: 1,
-  //       // loop: true,    
-  //       // centeredSlides: true,
-  //       autoHeight: true,
-  //       spaceBetween: 15,
-  //       pagination: {
-  //         el: '.special-slider__pagination',
-  //         clickable: true,
-  //         // dynamicBullets: true,
-  //         renderBullet: function (index, className) {
-  //         	return '<span class="' + className + '"><span>' + (index + 1) + '</span></span>';
-  //       	},
-  //       },
-  //       navigation: {
-	 //       nextEl: '.special-slider__arrow_next',
-	 //       prevEl: '.special-slider__arrow_prev',
-	 //     },
-  //     });
-  //   } else if ((screenWidth > intWidth) && (sptSwiper != undefined)) {
-  //     sptSwiper.destroy();
-  //     sptSwiper = undefined;
-  //     $(objSlider + ' .swiper-wrapper').removeAttr('style');
-  //     $(objSlider + ' .swiper-slide').removeAttr('style');
-  //   }
-  // }
-
-
-  // function equInitSwiper(objSlider, intWidth) {
-
-  //   var screenWidth = $(window).outerWidth();
-  //   var objNext = objSlider + ' .slider-arrow_next';
-  //   var objPrev = objSlider + ' .slider-arrow_prev';
-
-  //   if ( (screenWidth <= (intWidth)) && (equSwiper == undefined)) {
-  //     equSwiper = new Swiper(objSlider, {
-  //       slidesPerView: 1,
-  //       // loop: true,    
-  //       // centeredSlides: true,
-  //       autoHeight: true,
-  //       spaceBetween: 15,
-  //       pagination: {
-  //         el: '.equipment-slider__pagination',
-  //         clickable: true,
-  //         // dynamicBullets: true,
-  //         renderBullet: function (index, className) {
-  //         	return '<span class="' + className + '"><span>' + (index + 1) + '</span></span>';
-  //       	},
-  //       },
-  //       navigation: {
-	 //       nextEl: '.equipment-slider__arrow_next',
-	 //       prevEl: '.equipment-slider__arrow_prev',
-	 //     },
-  //     });
-  //   } else if ((screenWidth > intWidth) && (equSwiper != undefined)) {
-  //     equSwiper.destroy();
-  //     equSwiper = undefined;
-  //     $(objSlider + ' .swiper-wrapper').removeAttr('style');
-  //     $(objSlider + ' .swiper-slide').removeAttr('style');
-  //   }
-  // }
-
-  // function phtInitSwiper(objSlider, intWidth) {
-
-  //   var screenWidth = $(window).outerWidth();
-  //   var objNext = objSlider + ' .slider-arrow_next';
-  //   var objPrev = objSlider + ' .slider-arrow_prev';
-
-  //   if ( (screenWidth <= (intWidth)) && (phtSwiper == undefined)) {
-  //     phtSwiper = new Swiper(objSlider, {
-  //       slidesPerView: 1,
-  //       // loop: true,    
-  //       // centeredSlides: true,
-  //       autoHeight: true,
-  //       spaceBetween: 15,
-  //       pagination: {
-  //         el: '.photo-slider__pagination',
-  //         clickable: true,
-  //         // dynamicBullets: true,
-  //         renderBullet: function (index, className) {
-  //         	return '<span class="' + className + '"><span>' + (index + 1) + '</span></span>';
-  //       	},
-  //       },
-  //       navigation: {
-	 //       nextEl: '.photo-slider__arrow_next',
-	 //       prevEl: '.photo-slider__arrow_prev',
-	 //     },
-  //     });
-  //   } else if ((screenWidth > intWidth) && (phtSwiper != undefined)) {
-  //     phtSwiper.destroy();
-  //     phtSwiper = undefined;
-  //     $(objSlider + ' .swiper-wrapper').removeAttr('style');
-  //     $(objSlider + ' .swiper-slide').removeAttr('style');
-  //   }
-  // }
+  }  
 
   function allInitSwiper(objSlider,  varSwiper,  intWidth) {
 
@@ -263,6 +129,40 @@ jQuery(document).ready(function($) {
 
 
 
+});
+
+var swiper = new Swiper('.gallery-slider', {  
+  // If we need pagination
+
+  spaceBetween: 0,
+  slidesPerView: 1,
+  pagination: {
+    el: '.gallery-slider__pagination',
+          clickable: true,
+          // dynamicBullets: true,
+          renderBullet: function (index, className) {
+          	return '<span class="' + className + '"><span>' + (index + 1) + '</span></span>';
+        	},
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.gallery-slider__arrow_next',
+    prevEl: '.gallery-slider__arrow_prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      
+    },
+    768: {
+      slidesPerView: 3,
+      
+    },
+    1200: {
+      slidesPerView: 4,
+      
+    },
+  }
 });
 
 // Функция ymaps.ready() будет вызвана, когда

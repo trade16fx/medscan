@@ -1,0 +1,218 @@
+.section-reviews {
+	padding-top: 27px;
+	padding-bottom: 27px;
+	@media (min-width: 768px) {
+		padding-top: 40px;
+	padding-bottom: 40px;
+	}
+	@media (min-width: 768px) {
+		padding-top: 60px;
+	padding-bottom: 60px;
+	}
+  &__top {}
+
+  &__header {
+  	margin-bottom: 30px;
+  	.section-title {
+  		margin-bottom: 16px;
+  		@media (min-width: 992px) {
+  			margin-bottom: 0;
+  		}
+  	}
+    @media (min-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  &__viewall {}
+}
+
+.section-title {}
+
+.reviews-grid {
+	margin-bottom: 16px;
+	@media (min-width: 992px) {
+		margin-bottom: 48px;
+	}
+  &__item {
+  	margin-bottom: 30px;
+  	@media (min-width: 992px) {
+		margin-bottom: 0;
+	}
+  }
+}
+
+.reviews-card {
+  border: 6px solid #63E9FF;
+  padding: 10px 10px 30px;
+  position: relative;
+
+  @media (min-width: 992px) {
+    border: 10px solid #63E9FF;
+    padding: 20px 20px 40px;
+  }
+
+  &__text {
+  	font-size: 16px;
+  	@media (min-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  &__cont {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(50%);
+    background-color: #fff;
+    text-align: right;
+    padding: 0 12px;
+
+    @media (min-width: 992px) {
+      padding: 0 22px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    color: #1473B2;
+
+    @media (min-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  &__date {
+    font-size: 13px;
+    color: #C4C4C4;
+
+    @media (min-width: 992px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.reviewsForm {
+
+	input[type="text"],input[type="tel"],input[type="email"]{
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #DDEDFF;
+		color: #C4C4C4;
+		font-size: 15px;
+		padding-bottom: 9px;
+
+
+			&::-webkit-input-placeholder {color:#C4C4C4;}
+			&::-moz-placeholder          {color:#C4C4C4;}
+			&:-moz-placeholder           {color:#C4C4C4;}
+			&:-ms-input-placeholder      {color:#C4C4C4;}
+		
+			&:focus::-webkit-input-placeholder {color: transparent}
+			&:focus::-moz-placeholder          {color: transparent}
+			&:focus:-moz-placeholder           {color: transparent}
+			&:focus:-ms-input-placeholder      {color: transparent}
+		
+
+
+	}
+	input[type="tel"]{
+		color:#3E3E3E;
+		&::-webkit-input-placeholder {color:#3E3E3E;}
+			&::-moz-placeholder          {color:#3E3E3E;}
+			&:-moz-placeholder           {color:#3E3E3E;}
+			&:-ms-input-placeholder      {color:#3E3E3E;}
+		
+			&:focus::-webkit-input-placeholder {color: transparent}
+			&:focus::-moz-placeholder          {color: transparent}
+			&:focus:-moz-placeholder           {color: transparent}
+			&:focus:-ms-input-placeholder      {color: transparent}
+	}
+	textarea{
+		width: 100%;
+		height: 86px;
+		border: 1px solid #DDEDFF;
+		padding: 13px 17px;
+		resize:none;
+		&::-webkit-input-placeholder {color:#C4C4C4;}
+		&::-moz-placeholder          {color:#C4C4C4;}
+		&:-moz-placeholder           {color:#C4C4C4;}
+		&:-ms-input-placeholder      {color:#C4C4C4;}
+	
+		&:focus::-webkit-input-placeholder {color: transparent}
+		&:focus::-moz-placeholder          {color: transparent}
+		&:focus:-moz-placeholder           {color: transparent}
+		&:focus:-ms-input-placeholder      {color: transparent}
+
+			@media (min-width: 992px) { 
+				margin-top: -3px;
+				
+		  }
+
+
+
+
+	}
+	[class^='col-']{
+		margin-bottom: 20px;
+	}
+	&__submit{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	&__check-label{
+		display: block;
+		color: #3E3E3E;
+		font-size: 12px;
+		padding-left: 26px;
+		position: relative;
+
+		&:before{
+			display: block;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 1px;
+			width: 14px;
+			height: 14px;		
+			background-color: #D6E6EF;
+			
+		}
+		&:after{
+			display: block;
+			position: absolute;
+			content: '';
+			left: 3px;
+			top: 4px;
+			width: 8px;
+			height: 8px;		
+			background-color: #0071BB;
+			
+			opacity: 0;
+		}
+		
+		a{
+			color: #0071BB;
+			transition: all .3s;
+			border-bottom: 1px solid #0071BB;
+
+			&:hover{
+				border-color: transparent;
+			}
+		}
+
+	}
+	&__check{
+		display: none;
+	}
+	&__check:checked + &__check-label:after{
+		opacity: 1;
+	}
+
+}
+

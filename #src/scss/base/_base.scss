@@ -12,7 +12,7 @@
 
   opacity: .8;
   background-image: url(../images/bg04.png);
-  background-position: center 0px;
+  background-position: center 12px;
 
   filter: invert(100%);
   -webkit-filter: invert(100%);
@@ -223,4 +223,8 @@
 }
 .mb10{
   margin-bottom: 10px;
+}
+
+.hidden-content{
+  display: none;
 }

@@ -1,0 +1,65 @@
+.sticky-bar {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 30%;
+	z-index: 99;
+	background-color: #fff;
+	padding: 14px 0;
+	display: none;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+		@media (min-width: 992px) { 
+			display: block;
+			
+	  }
+	&__panel {
+		display: flex;
+		align-items: center;
+	}
+	&__mediabox {
+		
+		height: 73px;
+		overflow: hidden;
+		margin-right: 17px;
+		flex: 0 0 73px;
+		img{
+			width: 100%;
+		}
+	}
+	&__name {
+		flex: auto;
+		padding-right: 15px;
+		font-weight: bold;
+font-size: 15px;
+line-height: 1.1;
+
+	}
+	&__addr {
+		flex: 0 0 50%;
+		border-left: 1px solid #DDEDFF;
+		padding-left: 27px;
+		display: flex;
+		color: #0071BB;
+		font-size: 15px;
+		img{
+			margin-right: 17px;
+		}
+
+	}
+	&__btn-cont {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__btn {
+		// flex: 0 0 35%;
+		width: 48%;
+		
+		&_dark {
+			border-color: #3BC7EC;
+		}
+	}
+}
+
+
+

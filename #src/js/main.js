@@ -33,21 +33,37 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-	if ($('.section-ancorMenu').length){		
-		let mnutop = $('.section-ancorMenu').offset().top - 55;	
+	if ($('.js-ancorMenu').length){		
+		let mnutop = $('.js-ancorMenu').offset().top - 55;	
 
 		$(window).scroll(function() {
 	  	scr_w = screen.width;
 	  	if (scr_w > 991) {
 	      if ($(window).scrollTop() > mnutop) {
-	         $('.section-ancorMenu').addClass('fixed');                
+	         $('.js-ancorMenu').addClass('fixed');                
 	      }
 	      else {
-	        $('.section-ancorMenu').removeClass('fixed');          
+	        $('.js-ancorMenu').removeClass('fixed');          
 	      }      
 	     }
 	   });
 	}
+
+  if ($('.js-ancorbar').length){   
+    let mnutop = $('.section-doctor').offset().top + $('.section-doctor').height()  - 55;  
+
+    $(window).scroll(function() {
+      scr_w = screen.width;
+      if (scr_w > 991) {
+        if ($(window).scrollTop() > mnutop) {
+           $('.sticky-bar').addClass('fixed');                
+        }
+        else {
+          $('.sticky-bar').removeClass('fixed');          
+        }      
+       }
+     });
+  }
 
 	if ($('.advantages-slider').length){
     var advSwiper = undefined;

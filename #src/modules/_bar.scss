@@ -1,21 +1,55 @@
 .sticky-bar {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 30%;
-	z-index: 99;
-	background-color: #fff;
-	padding: 14px 0;
+	
+	
+	
 	display: none;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
-		@media (min-width: 992px) { 
+	position: absolute;
+	left: -10000px;
+
+	margin-top: 102px;
+	// box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+@media (min-width: 992px) { 
 			display: block;
 			
 	  }
+	
+	&.fixed{
+		.sticky-bar__wrap{
+			position: fixed;
+			width: 100%;
+			top: 55px;
+			z-index: 99;
+			box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+		}
+
+
+		.sticky-bar__cont{
+			border: none;
+		}
+		
+
+	}
+	&__wrap	{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -102px;
+		background-color: #fff;
+	transition: all .8s;
+
+
+
+
+	}
+	  &__cont{
+	  	border-bottom: 1px solid #ddedff;
+	  }
 	&__panel {
 		display: flex;
-		align-items: center;
+		padding: 14px 0 15px;
+		align-items: center;		
 	}
+
 	&__mediabox {
 		
 		height: 73px;
